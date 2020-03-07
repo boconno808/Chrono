@@ -1,20 +1,21 @@
-import React from "react";
-import {
-  ComposableMap,
-  Geographies,
-  Geography,
-  Marker,
-  Annotation,
-  ZoomableGroup
-} from "react-simple-maps";
+import React, { useState } from "react";
+import { ComposableMap, Geographies, Geography, Marker, Annotation, ZoomableGroup} from "react-simple-maps";
+import LocationMarker from './LocationMarker';
 
 const geoUrl =
   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 
 const Map = () => {
+    const [zoom, setZoom] = useState(1);
+   
+
+    function zoomIn(position) {
+        setZoom(zoom * 2);
+    }
+
   return (
     <ComposableMap>
-      <ZoomableGroup>
+      <ZoomableGroup zoom={zoom}>
         <Geographies geography={geoUrl}>
             {({ geographies }) =>
             geographies.map(geo => (
@@ -27,12 +28,7 @@ const Map = () => {
             ))
             }
         </Geographies>
-        <Marker coordinates={[-74.006, 40.7128]}>
-            <circle r={2} fill="#F53" />
-        </Marker>
-        <Marker coordinates={[-98, 33]}>
-            <circle r={2} fill="#F53" />
-        </Marker>
+        <LocationMarker long={-74.006} lat={40.7128}> </LocationMarker>
         <Annotation
             subject={[-98, 33]}
             dx={-5}
