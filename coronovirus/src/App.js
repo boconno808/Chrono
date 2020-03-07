@@ -1,6 +1,5 @@
 import React from 'react';
-import Map from ./components/Map
-import logo from './logo.svg';
+import Map from './components/Map';
 import './App.css';
 
 function App() {
@@ -8,6 +7,7 @@ function App() {
     <div className="App">
       <Map>
       </Map>
+    </div>
   );
 }
 
