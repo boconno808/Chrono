@@ -59,10 +59,9 @@ export default function BackgroundInfo() {
         </Grid>
         <Grid item xs={8}>
         <Typography color="textSecondary">
-        It may be possible that a person can get COVID-19 by touching a surface or object that has the virus
-        on it and then touching their own mouth, nose, or possibly their eyes, but this is not thought to be
-        the main way the virus spreads.
-        Imported cases of COVID-19 in travelers have been detected in the U.S and other countries.
+          <FormattedMessage id="app.backgroundInfo.spreadTravel"
+                    defaultMessage="It may be possible that a person can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or possibly their eyes, but this is not thought to be the main way the virus spreads. Imported cases of COVID-19 in travelers have been detected in the U.S and other countries."
+                    description="spreads by surfaces and travel"/>
         </Typography>
         </Grid>
         <Grid item xs={4}>

@@ -1,7 +1,22 @@
 [
   {
+    "id": "app.protect.washHands",
+    "description": "wash Hands",
+    "defaultMessage": "Regularly clean your hands with an alcohol-based hand rub or wash them with soap and water. Washing your hands rub kills viruses that may be on your hands."
+  },
+  {
     "id": "app.protect.eyesNoseMouth",
     "description": "protect eyesNoseMothh",
-    "defaultMessage": "Avoid touching eyes, nose and mouth, hands touch many surfaces and can pick up viruses.\\n Once contaminated, hands can transfer the virus to your eyes, nose or mouth."
+    "defaultMessage": "Avoid touching eyes, nose and mouth, hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth."
+  },
+  {
+    "id": "app.protect.socialDistance",
+    "description": "s distance",
+    "defaultMessage": "Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing. When someone coughs or sneezes they spray small droplets which may contain virus."
+  },
+  {
+    "id": "app.protect.coughManners",
+    "description": "coughManners",
+    "defaultMessage": "Cover your mouth and nose with your bent elbow or tissue when you cough or sneeze. By following good respiratory hygiene you protect the people around you from viruses such as cold, flu and COVID-19"
   }
 ]

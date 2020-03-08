@@ -33,8 +33,9 @@ export default function ProtectYourself() {
           <Paper>
             <img src={WashHands} alt={"WashHands"} className ={classes.imgSize}/>
             <Typography color="textSecondary" className ={classes.pos}>
-            Regularly clean your hands with an alcohol-based hand rub or wash them with soap and water.
-            Washing your hands rub kills viruses that may be on your hands.
+            <FormattedMessage id="app.protect.washHands"
+                  defaultMessage="Regularly clean your hands with an alcohol-based hand rub or wash them with soap and water. Washing your hands rub kills viruses that may be on your hands."
+                  description="wash Hands"/>
             </Typography>
           </Paper>
         </Grid>
@@ -43,7 +44,7 @@ export default function ProtectYourself() {
             <img src={EyesNoseMouth} alt={"EyesNoseMouth"} className ={classes.imgSize}/>
             <Typography color="textSecondary" className ={classes.pos}>
               <FormattedMessage id="app.protect.eyesNoseMouth"
-                    defaultMessage="Avoid touching eyes, nose and mouth, hands touch many surfaces and can pick up viruses.\n Once contaminated, hands can transfer the virus to your eyes, nose or mouth."
+                    defaultMessage="Avoid touching eyes, nose and mouth, hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth."
                     description="protect eyesNoseMothh"/>
             </Typography>
           </Paper>
@@ -52,8 +53,9 @@ export default function ProtectYourself() {
           <Paper>
             <img src={SocialDistance} alt={"SocialDistance"} className ={classes.imgSize}/>
             <Typography color="textSecondary" className ={classes.pos}>
-            Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.
-            When someone coughs or sneezes they spray small droplets which may contain virus.
+              <FormattedMessage id="app.protect.socialDistance"
+                    defaultMessage="Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing. When someone coughs or sneezes they spray small droplets which may contain virus."
+                    description="s distance"/>
             </Typography>
           </Paper>
         </Grid>
@@ -61,8 +63,9 @@ export default function ProtectYourself() {
           <Paper>
             <img src={CoughManners} alt={"CoughManners"} className ={classes.imgSize}/>
             <Typography color="textSecondary" className ={classes.pos}>
-            Cover your mouth and nose with your bent elbow or tissue when you cough or sneeze.
-            By following good respiratory hygiene you protect the people around you from viruses such as cold, flu and COVID-19
+            <FormattedMessage id="app.protect.coughManners"
+                  defaultMessage="Cover your mouth and nose with your bent elbow or tissue when you cough or sneeze. By following good respiratory hygiene you protect the people around you from viruses such as cold, flu and COVID-19"
+                  description="coughManners"/>
             </Typography>
           </Paper>
         </Grid>

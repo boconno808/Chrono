@@ -1,0 +1,42 @@
+[
+  {
+    "id": "app.donate.directRelief",
+    "description": "direct relief description",
+    "defaultMessage": "Direct Relief"
+  },
+  {
+    "id": "app.donate.directReliefDescription",
+    "description": "direct relief description",
+    "defaultMessage": "Works with public health authorities, nonprofits, and businesses to provide protective items, such as masks and gloves"
+  },
+  {
+    "id": "app.donate.cdc",
+    "description": "cdc title",
+    "defaultMessage": "CDC Foundation"
+  },
+  {
+    "id": "app.donate.cdcDescription",
+    "description": "cdc description",
+    "defaultMessage": "Provides state and local health departments, support for the global response, logistics, communications, data management, personal protective equipment, critical response supplies and more"
+  },
+  {
+    "id": "app.donate.globalGiving",
+    "description": "global giving title",
+    "defaultMessage": "Global Giving"
+  },
+  {
+    "id": "app.donate.globalGivingDescription",
+    "description": "global giving description",
+    "defaultMessage": "Help meet healthcare, food, and water needs to those in impacted areas"
+  },
+  {
+    "id": "app.donate.h2h",
+    "description": "h2h title",
+    "defaultMessage": "Heart to Heart International"
+  },
+  {
+    "id": "app.donate.h2hDescription",
+    "description": "h2h description",
+    "defaultMessage": "Supports COVID-19 planning, preparedness and training to manage the outbreak"
+  }
+]

@@ -8,6 +8,10 @@ import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
+import {FormattedMessage} from 'react-intl';
+import TranslationMenu from './components/TranslationMenu';
+
+
 
 const useStyles = makeStyles({
   root: {
@@ -26,6 +30,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
+        <TranslationMenu/>
           <Router>
             <BottomNavigation
               value={currentPage}
@@ -36,19 +41,25 @@ function App() {
               <BottomNavigationAction
                   component={Link}
                   to="/coronovirus/prepare"
-                  label='Prepare'
+                  label= <FormattedMessage id="app.prepare"
+                            defaultMessage="Prepare"
+                            description="prepare"/>
                   value='Prepare'
               />
               <BottomNavigationAction
                   component={Link}
                   to="/coronovirus/test"
-                  label='Test Location'
+                  label= <FormattedMessage id="app.testLocation"
+                            defaultMessage="Test Location"
+                            description="test Location"/>
                   value='Test'
               />
               <BottomNavigationAction
                   component={Link}
                   to="/coronovirus/donate"
-                  label='Donate'
+                  label= <FormattedMessage id="app.donate"
+                            defaultMessage="Donate"
+                            description="Donate"/>
                   value='Donate'
               />
             </BottomNavigation>

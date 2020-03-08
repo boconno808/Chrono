@@ -2,6 +2,96 @@
   {
     "descriptors": [
       {
+        "defaultMessage": "Prepare",
+        "description": "prepare",
+        "id": "app.prepare"
+      },
+      {
+        "defaultMessage": "Test Location",
+        "description": "test Location",
+        "id": "app.testLocation"
+      },
+      {
+        "defaultMessage": "Donate",
+        "description": "Donate",
+        "id": "app.donate"
+      }
+    ],
+    "path": "src/App.json"
+  },
+  {
+    "descriptors": [
+      {
+        "defaultMessage": "The virus has been named SARS-CoV-2 and the disease it causes has been named coronavirus disease 2019 (abbreviated COVID-19). The coronavirus was first detected in China and has now been detected in almost 90 locations internationally, including in the United States. On January 30, 2020, the International Health Regulations Emergency Committee of the World Health Organization declared the outbreak a Public health emergency of national concern",
+        "description": "Short summary on covid",
+        "id": "app.backgroundInfo.covidExplaination"
+      },
+      {
+        "defaultMessage": "How it spreads",
+        "description": "How it spreads",
+        "id": "app.backgroundInfo.howitspreads"
+      },
+      {
+        "defaultMessage": "Between people who are in close contact with one another (within about 6 feet). Through respiratory droplets produced when an infected person coughs or sneezes. People are thought to be most contagious when they are most symptomatic (the sickest). Some spread might be possible before people show symptoms; there have been reports of this occurring with this new coronavirus, but this is not thought to be the main way the virus spreads.",
+        "description": "spread explaination",
+        "id": "app.backgroundInfo.spreadExplaination"
+      },
+      {
+        "defaultMessage": "It may be possible that a person can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or possibly their eyes, but this is not thought to be the main way the virus spreads. Imported cases of COVID-19 in travelers have been detected in the U.S and other countries.",
+        "description": "spreads by surfaces and travel",
+        "id": "app.backgroundInfo.spreadTravel"
+      }
+    ],
+    "path": "src/components/BackgroundInfo.json"
+  },
+  {
+    "descriptors": [
+      {
+        "defaultMessage": "Direct Relief",
+        "description": "direct relief description",
+        "id": "app.donate.directRelief"
+      },
+      {
+        "defaultMessage": "Works with public health authorities, nonprofits, and businesses to provide protective items, such as masks and gloves",
+        "description": "direct relief description",
+        "id": "app.donate.directReliefDescription"
+      },
+      {
+        "defaultMessage": "CDC Foundation",
+        "description": "cdc title",
+        "id": "app.donate.cdc"
+      },
+      {
+        "defaultMessage": "Provides state and local health departments, support for the global response, logistics, communications, data management, personal protective equipment, critical response supplies and more",
+        "description": "cdc description",
+        "id": "app.donate.cdcDescription"
+      },
+      {
+        "defaultMessage": "Global Giving",
+        "description": "global giving title",
+        "id": "app.donate.globalGiving"
+      },
+      {
+        "defaultMessage": "Help meet healthcare, food, and water needs to those in impacted areas",
+        "description": "global giving description",
+        "id": "app.donate.globalGivingDescription"
+      },
+      {
+        "defaultMessage": "Heart to Heart International",
+        "description": "h2h title",
+        "id": "app.donate.h2h"
+      },
+      {
+        "defaultMessage": "Supports COVID-19 planning, preparedness and training to manage the outbreak",
+        "description": "h2h description",
+        "id": "app.donate.h2hDescription"
+      }
+    ],
+    "path": "src/components/donateImgData.json"
+  },
+  {
+    "descriptors": [
+      {
         "defaultMessage": "Coro-No Virus",
         "description": "introduction title",
         "id": "app.introduction.title"
@@ -13,6 +103,96 @@
       }
     ],
     "path": "src/components/Introduction.json"
+  },
+  {
+    "descriptors": [
+      {
+        "defaultMessage": "Kaiser Permanente Los Angeles Medical Center",
+        "description": "Kaiser Name",
+        "id": "app.map.kaiser.name"
+      },
+      {
+        "defaultMessage": "4867 Sunset Blvd, Los Angeles, CA 90027",
+        "description": "Kaiser Address",
+        "id": "app.map.kaiser.address"
+      },
+      {
+        "defaultMessage": "School of Public Health, The University of Hong Kong",
+        "description": "HK Name",
+        "id": "app.map.hk.name"
+      },
+      {
+        "defaultMessage": "7 Sassoon Rd, Sandy Bay, Hong Kong",
+        "description": "HK Address",
+        "id": "app.map.hk.address"
+      },
+      {
+        "defaultMessage": "National Centre for Infectious Diseases (NCID)",
+        "description": "Singapore Name",
+        "id": "app.map.singapore.name"
+      },
+      {
+        "defaultMessage": "16 Jln Tan Tock Seng, Singapore 308442",
+        "description": "Singapore Address",
+        "id": "app.map.singapore.address"
+      },
+      {
+        "defaultMessage": "Institut Pasteur",
+        "description": "Paris Name",
+        "id": "app.map.paris.name"
+      },
+      {
+        "defaultMessage": "25-28 Rue du Dr Roux, 75015 Paris, France",
+        "description": "Paris Address",
+        "id": "app.map.paris.address"
+      },
+      {
+        "defaultMessage": "Public Health England",
+        "description": "England Name",
+        "id": "app.map.england.name"
+      },
+      {
+        "defaultMessage": "Wellington House, 133-155 Waterloo Rd, Bishop's, London SE1 8UG, United Kingdom",
+        "description": "England Address",
+        "id": "app.map.england.address"
+      },
+      {
+        "defaultMessage": "Victorian Infectious Diseases Services",
+        "description": "Aus Name",
+        "id": "app.map.aus.name"
+      },
+      {
+        "defaultMessage": "9/300 Grattan St, Parkville VIC 3050, Australia",
+        "description": "Aus Address",
+        "id": "app.map.aus.address"
+      }
+    ],
+    "path": "src/components/Map.json"
+  },
+  {
+    "descriptors": [
+      {
+        "defaultMessage": "Because the coronavirus started in Wuhan China, many people think that only asians have the virus. Not only is this assumption wrong, it is also racist.",
+        "description": "asians only myth",
+        "id": "app.myths.asiansOnly"
+      },
+      {
+        "defaultMessage": "Some people have been saying that coronavirus is no worse than the flu. Unlike the flu there’s no vaccinations for coronavirus yet, so the effects are worse than the flu.",
+        "description": "flu myth",
+        "id": "app.myths.sameAsFlu"
+      },
+      {
+        "defaultMessage": "Not only the elderly are susceptible to coronavirus, people of all ages can be infected. Though older people, and people with pre-existing medical conditions appear to be more vulnerable to becoming severely ill with the virus.",
+        "description": "old People myth",
+        "id": "app.myths.oldPeople"
+      },
+      {
+        "defaultMessage": "It is not recommended that people who are well wear a mask to protect themselves from COVID-19 unless a healthcare professional advises it. Only those affected and those helping the affected need to wear a N95 mask.",
+        "description": "mask myth",
+        "id": "app.myths.mask"
+      }
+    ],
+    "path": "src/components/Myths.json"
   },
   {
     "descriptors": [
@@ -37,11 +217,61 @@
   {
     "descriptors": [
       {
-        "defaultMessage": "Avoid touching eyes, nose and mouth, hands touch many surfaces and can pick up viruses.\\n Once contaminated, hands can transfer the virus to your eyes, nose or mouth.",
+        "defaultMessage": "Regularly clean your hands with an alcohol-based hand rub or wash them with soap and water. Washing your hands rub kills viruses that may be on your hands.",
+        "description": "wash Hands",
+        "id": "app.protect.washHands"
+      },
+      {
+        "defaultMessage": "Avoid touching eyes, nose and mouth, hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth.",
         "description": "protect eyesNoseMothh",
         "id": "app.protect.eyesNoseMouth"
+      },
+      {
+        "defaultMessage": "Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing. When someone coughs or sneezes they spray small droplets which may contain virus.",
+        "description": "s distance",
+        "id": "app.protect.socialDistance"
+      },
+      {
+        "defaultMessage": "Cover your mouth and nose with your bent elbow or tissue when you cough or sneeze. By following good respiratory hygiene you protect the people around you from viruses such as cold, flu and COVID-19",
+        "description": "coughManners",
+        "id": "app.protect.coughManners"
       }
     ],
     "path": "src/components/ProtectYourself.json"
+  },
+  {
+    "descriptors": [
+      {
+        "defaultMessage": "Translate",
+        "description": "translate menu",
+        "id": "app.translateTitle"
+      },
+      {
+        "defaultMessage": "English",
+        "description": "translate english",
+        "id": "app.translate.english"
+      },
+      {
+        "defaultMessage": "French",
+        "description": "translate french",
+        "id": "app.translate.french"
+      },
+      {
+        "defaultMessage": "Chinese",
+        "description": "translate chinese",
+        "id": "app.translate.chinese"
+      },
+      {
+        "defaultMessage": "Spanish",
+        "description": "translate spanish",
+        "id": "app.translate.spanish"
+      },
+      {
+        "defaultMessage": "Japanese",
+        "description": "translate japanese",
+        "id": "app.translate.japanese"
+      }
+    ],
+    "path": "src/components/TranslationMenu.json"
   }
 ]

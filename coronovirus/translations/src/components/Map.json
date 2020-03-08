@@ -1,0 +1,62 @@
+[
+  {
+    "id": "app.map.kaiser.name",
+    "description": "Kaiser Name",
+    "defaultMessage": "Kaiser Permanente Los Angeles Medical Center"
+  },
+  {
+    "id": "app.map.kaiser.address",
+    "description": "Kaiser Address",
+    "defaultMessage": "4867 Sunset Blvd, Los Angeles, CA 90027"
+  },
+  {
+    "id": "app.map.hk.name",
+    "description": "HK Name",
+    "defaultMessage": "School of Public Health, The University of Hong Kong"
+  },
+  {
+    "id": "app.map.hk.address",
+    "description": "HK Address",
+    "defaultMessage": "7 Sassoon Rd, Sandy Bay, Hong Kong"
+  },
+  {
+    "id": "app.map.singapore.name",
+    "description": "Singapore Name",
+    "defaultMessage": "National Centre for Infectious Diseases (NCID)"
+  },
+  {
+    "id": "app.map.singapore.address",
+    "description": "Singapore Address",
+    "defaultMessage": "16 Jln Tan Tock Seng, Singapore 308442"
+  },
+  {
+    "id": "app.map.paris.name",
+    "description": "Paris Name",
+    "defaultMessage": "Institut Pasteur"
+  },
+  {
+    "id": "app.map.paris.address",
+    "description": "Paris Address",
+    "defaultMessage": "25-28 Rue du Dr Roux, 75015 Paris, France"
+  },
+  {
+    "id": "app.map.england.name",
+    "description": "England Name",
+    "defaultMessage": "Public Health England"
+  },
+  {
+    "id": "app.map.england.address",
+    "description": "England Address",
+    "defaultMessage": "Wellington House, 133-155 Waterloo Rd, Bishop's, London SE1 8UG, United Kingdom"
+  },
+  {
+    "id": "app.map.aus.name",
+    "description": "Aus Name",
+    "defaultMessage": "Victorian Infectious Diseases Services"
+  },
+  {
+    "id": "app.map.aus.address",
+    "description": "Aus Address",
+    "defaultMessage": "9/300 Grattan St, Parkville VIC 3050, Australia"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "app.translateTitle",
+    "description": "translate menu",
+    "defaultMessage": "Translate"
+  },
+  {
+    "id": "app.translate.english",
+    "description": "translate english",
+    "defaultMessage": "English"
+  },
+  {
+    "id": "app.translate.french",
+    "description": "translate french",
+    "defaultMessage": "French"
+  },
+  {
+    "id": "app.translate.chinese",
+    "description": "translate chinese",
+    "defaultMessage": "Chinese"
+  },
+  {
+    "id": "app.translate.spanish",
+    "description": "translate spanish",
+    "defaultMessage": "Spanish"
+  },
+  {
+    "id": "app.translate.japanese",
+    "description": "translate japanese",
+    "defaultMessage": "Japanese"
+  }
+]

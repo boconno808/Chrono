@@ -1,0 +1,22 @@
+[
+  {
+    "id": "app.myths.asiansOnly",
+    "description": "asians only myth",
+    "defaultMessage": "Because the coronavirus started in Wuhan China, many people think that only asians have the virus. Not only is this assumption wrong, it is also racist."
+  },
+  {
+    "id": "app.myths.sameAsFlu",
+    "description": "flu myth",
+    "defaultMessage": "Some people have been saying that coronavirus is no worse than the flu. Unlike the flu there’s no vaccinations for coronavirus yet, so the effects are worse than the flu."
+  },
+  {
+    "id": "app.myths.oldPeople",
+    "description": "old People myth",
+    "defaultMessage": "Not only the elderly are susceptible to coronavirus, people of all ages can be infected. Though older people, and people with pre-existing medical conditions appear to be more vulnerable to becoming severely ill with the virus."
+  },
+  {
+    "id": "app.myths.mask",
+    "description": "mask myth",
+    "defaultMessage": "It is not recommended that people who are well wear a mask to protect themselves from COVID-19 unless a healthcare professional advises it. Only those affected and those helping the affected need to wear a N95 mask."
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "app.prepare",
+    "description": "prepare",
+    "defaultMessage": "Prepare"
+  },
+  {
+    "id": "app.testLocation",
+    "description": "test Location",
+    "defaultMessage": "Test Location"
+  },
+  {
+    "id": "app.donate",
+    "description": "Donate",
+    "defaultMessage": "Donate"
+  }
+]
