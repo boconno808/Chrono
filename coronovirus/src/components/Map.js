@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { ComposableMap, Geographies, Geography, Annotation, ZoomableGroup} from "react-simple-maps";
 import LocationMarker from './LocationMarker';
 
@@ -6,7 +6,7 @@ const geoUrl =
   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 
 const Map = () => {
-    const [zoom, setZoom] = useState(1);
+    //const [zoom, setZoom] = useState(1);
 
     const coordinates = [
       // US Locations
@@ -28,20 +28,20 @@ const Map = () => {
       //{long:-98, lat:33}
     ];
 
-    function zoomIn () {
-        setZoom(zoom * 2);
-    }
+    // function zoomIn () {
+    //     setZoom(zoom * 2);
+    // }
 
   return (
     <ComposableMap>
-      <ZoomableGroup zoom={zoom} zoomIn={zoomIn}>
+      <ZoomableGroup>
         <Geographies geography={geoUrl}>
             {({ geographies }) =>
             geographies.map(geo => 
               ( <Geography key={geo.rsmKey} geography={geo} fill="#DDD" stroke="#FFF"/>))}
         </Geographies>
             { coordinates.map((coordinates) =>
-                <LocationMarker long={coordinates.long} lat={coordinates.lat} zoomIn={zoomIn}/>
+                <LocationMarker long={coordinates.long} lat={coordinates.lat}/>
             )}
             { coordinates.map((coordinates) =>
               <Annotation
@@ -55,18 +55,6 @@ const Map = () => {
                   </text>
               </Annotation>
             )}
-
-        {/* <ZoomableGroup center={[position.lat, position.long] }> */}
-            {/* <LocationMarker lat={position.lat} long={position.long} zoomIn={zoomIn} >
-            </LocationMarker> */}
-         {/* </ZoomableGroup> */}
-
-         {/* <ZoomableGroup center={[30, 30] }> */}
-            {/* <LocationMarker lat={100} long={30} zoomIn={zoomIn} center={[100, 30] }>
-            </LocationMarker> */}
-         {/* </ZoomableGroup> */}
-
-        
       </ZoomableGroup>
     </ComposableMap>
   );
