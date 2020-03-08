@@ -41,9 +41,24 @@ export default function TranslationMenu(props) {
                 description="translate english"/>
           </MenuItem>
           <MenuItem onClick={() => setLocale('es')}>
-          <FormattedMessage id="app.translate.span"
+          <FormattedMessage id="app.translate.spanish"
                 defaultMessage="Spanish"
                 description="translate spanish"/>
+          </MenuItem>
+          <MenuItem onClick={() => setLocale('ja')}>
+          <FormattedMessage id="app.translate.japanese"
+                defaultMessage="Japanese"
+                description="translate japanese"/>
+          </MenuItem>
+          <MenuItem onClick={() => setLocale('zh')}>
+          <FormattedMessage id="app.translate.chinese"
+                defaultMessage="Chinese"
+                description="translate chinese"/>
+          </MenuItem>
+          <MenuItem onClick={() => setLocale('fr')}>
+          <FormattedMessage id="app.translate.french"
+                defaultMessage="French"
+                description="translate french"/>
           </MenuItem>
         </Menu>
       </div>
