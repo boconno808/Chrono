@@ -7,34 +7,28 @@ const geoUrl =
 
 const Map = () => {
     const [zoom, setZoom] = useState(1);
-    // const [coordinates, setCoordinates] = useState([]);
 
     const coordinates = [
-        {lat: -10, long: 2},
-        {lat: -30, long: 30},
-        {lat: 50, long: 100}
+      // US Locations
+      {long: -118.384434, lat: 34.040348, name: "UCLA Medical"},
+      {long: -118.445353, lat: 34.069072, name: "UCLA Health Internal Medicine Physicians"},
+      {long: -118.291547, lat: 34.103174, name: "Kaiser Permanente Los Angeles Medical Center", address: "4867 Sunset Blvd, Los Angeles, CA 90027"},
+      
+      // Asia Locations
+      {long: 114.129255, lat: 22.268874, name: "School of Public Health, The University of Hong Kong", address: "7 Sassoon Rd, Sandy Bay, Hong Kong"},
+      {long: 103.847211, lat: 1.322317, name: "National Centre for Infectious Diseases (NCID)", address: "16 Jln Tan Tock Seng, Singapore 308442"},
+    
+      // Europe Locations
+      {long: 2.311227, lat: 48.840469, name: "Institut Pasteur", address: "25-28 Rue du Dr Roux, 75015 Paris, France"},
+      {long: -0.108711, lat: 51.501537, name: "Public Health England", address: "Wellington House, 133-155 Waterloo Rd, Bishop's, London SE1 8UG, United Kingdom"},
+    
+      // Australia Location
+      {long: 144.956177, lat: -37.798862, name: "Victorian Infectious Diseases Services", address: "9/300 Grattan St, Parkville VIC 3050, Australia"}
     ];
-
-    // function updateCoordinates (props) {
-    //     setCoordinates([...coordinates, props]);
-    // }
-
-
-
-    // const position = {
-    //     // lat: -74.006,
-    //     // long: 40.7128
-    //     lat:10,
-    //     long:10
-    // };
    
     function zoomIn () {
         setZoom(zoom * 2);
     }
-
-    // function centerZoom() {
-    //     cen
-    // }
 
   return (
     <ComposableMap>
@@ -52,7 +46,7 @@ const Map = () => {
             }
         </Geographies>
             {coordinates.map((coordinates) =>
-                <LocationMarker lat={coordinates.lat} long={coordinates.long}/>
+                <LocationMarker long={coordinates.long} lat={coordinates.lat} zoomIn={zoomIn}/>
             )}
 
         {/* <ZoomableGroup center={[position.lat, position.long] }> */}
@@ -65,7 +59,7 @@ const Map = () => {
             </LocationMarker> */}
          {/* </ZoomableGroup> */}
 
-        {/* <Annotation
+        <Annotation
             subject={[-98, 33]}
             dx={-5}
             dy={-10}
@@ -77,7 +71,7 @@ const Map = () => {
             <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="#F53">
             {"Rachel's Home"}
             </text>
-        </Annotation> */}
+        </Annotation>
       </ZoomableGroup>
     </ComposableMap>
   );
