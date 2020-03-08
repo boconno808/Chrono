@@ -7,7 +7,8 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
-import BackgroundInfo from './BackgroundInfo'
+import OnMenuClick from './OnMenuClick'
+
 
 const useStyles = makeStyles({
   root:{
@@ -44,6 +45,8 @@ const useStyles = makeStyles({
 
 export default function Prepare() {
   const classes = useStyles();
+  const [currentPage, setCurrentPage] = React.useState('Background Information');
+
   return (
     <div className={classes.root}>
     <Grid
@@ -54,14 +57,14 @@ export default function Prepare() {
           <Card className={classes.menu}>
             <CardContent className={classes.cardPadding}>
             <List component="nav" className={classes.list}>
-              <ListItem button className={classes.dividers}>
-                <ListItemText primary="Background Information" className={classes.white} />
+              <ListItem button className={classes.dividers} onClick={() => setCurrentPage("Background Information")}>
+                <ListItemText primary="Background Information" className={classes.white}/>
               </ListItem>
               <Divider />
-              <ListItem button divider className={classes.dividers} >
-                <ListItemText primary="Protect Yourself" className={classes.white}/>
+              <ListItem button divider className={classes.dividers} onClick={() => setCurrentPage("Protect Yourself")}>
+                <ListItemText primary="Protect Yourself" className={classes.white} />
               </ListItem>
-              <ListItem button className={classes.dividers}>
+              <ListItem button className={classes.dividers} onClick={() => setCurrentPage("Myths")}>
                 <ListItemText primary="Myths" className={classes.white} />
               </ListItem>
             </List>
@@ -71,7 +74,7 @@ export default function Prepare() {
       <Grid item xs={9}>
         <Card className={classes.card}>
           <CardContent>
-            <BackgroundInfo/>
+            <OnMenuClick pageToShow = {currentPage}/>
           </CardContent>
         </Card>
       </Grid>
