@@ -32,7 +32,7 @@ const Map = () => {
 
   return (
     <ComposableMap>
-      <ZoomableGroup zoom={zoom}>
+      <ZoomableGroup zoom={zoom} zoomIn={zoomIn}>
         <Geographies geography={geoUrl}>
             {({ geographies }) =>
             geographies.map(geo => (
