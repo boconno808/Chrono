@@ -7,14 +7,18 @@ const geoUrl =
 
 const Map = () => {
     const [zoom, setZoom] = useState(1);
+    const position = {
+        lat: -74.006,
+        long: 40.7128
+    };
    
-    function zoomIn() {
+    function zoomIn () {
         setZoom(zoom * 2);
     }
 
   return (
     <ComposableMap>
-      <ZoomableGroup zoom={zoom} zoomIn={zoomIn} setZoom={setZoom}>
+      <ZoomableGroup zoom={zoom} zoomIn={zoomIn} position={position} center={[position.lat, position.long]}>
         <Geographies geography={geoUrl}>
             {({ geographies }) =>
             geographies.map(geo => (
@@ -27,7 +31,7 @@ const Map = () => {
             ))
             }
         </Geographies>
-        <LocationMarker lat={-74.006} long={40.7128} zoomIn={zoomIn}> </LocationMarker>
+        <LocationMarker lat={position.lat} long={position.long} zoomIn={zoomIn}> </LocationMarker>
         <Annotation
             subject={[-98, 33]}
             dx={-5}
