@@ -9,7 +9,6 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
 import {FormattedMessage} from 'react-intl';
-import TranslationMenu from './components/TranslationMenu';
 
 
 
@@ -30,7 +29,6 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <TranslationMenu/>
           <Router>
             <BottomNavigation
               value={currentPage}
