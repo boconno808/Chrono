@@ -4,19 +4,22 @@ import MobileStepper from '@material-ui/core/MobileStepper';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import { donateImgData } from './donateImgData';
+import LinkIcon from '@material-ui/icons/Link';
+import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles({
     root: {
-      paddingTop: '2%',
       maxWidth: 800,
       flexGrow: 1,
       padding: 6,
       margin: 'auto',
     },
     header: {
+      paddingTop: '4%',
       display: 'flex',
       alignItems: 'center',
       height: 75,
@@ -38,6 +41,9 @@ const useStyles = makeStyles({
       display: 'block',
       width: '100%',
     },
+    button: {
+      color: 'red',
+    }
 });
 
 export default function Donate() {
@@ -60,6 +66,10 @@ export default function Donate() {
       <Paper square elevation={0} className={classes.header}>
         <div className={classes.headerText}>
         <Typography variant = "h5" gutterBottom>{donateImgData[activeStep].label} </Typography>
+        <Divider />
+        <IconButton className = {classes.button} aria-label={`link`} target="_blank" href={donateImgData[activeStep].link}>
+              <LinkIcon />
+        </IconButton>
         <Typography variant="caption" gutterBottom>{donateImgData[activeStep].description}</Typography>
         </div>
       </Paper>
