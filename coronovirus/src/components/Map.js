@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ComposableMap, Geographies, Geography, Marker, Annotation, ZoomableGroup} from "react-simple-maps";
+import { ComposableMap, Geographies, Geography, Annotation, ZoomableGroup} from "react-simple-maps";
 import LocationMarker from './LocationMarker';
 
 const geoUrl =
@@ -8,14 +8,13 @@ const geoUrl =
 const Map = () => {
     const [zoom, setZoom] = useState(1);
    
-
-    function zoomIn(position) {
+    function zoomIn() {
         setZoom(zoom * 2);
     }
 
   return (
     <ComposableMap>
-      <ZoomableGroup zoom={zoom}>
+      <ZoomableGroup zoom={zoom} zoomIn={zoomIn} setZoom={setZoom}>
         <Geographies geography={geoUrl}>
             {({ geographies }) =>
             geographies.map(geo => (
@@ -28,7 +27,7 @@ const Map = () => {
             ))
             }
         </Geographies>
-        <LocationMarker long={-74.006} lat={40.7128}> </LocationMarker>
+        <LocationMarker lat={-74.006} long={40.7128} zoomIn={zoomIn}> </LocationMarker>
         <Annotation
             subject={[-98, 33]}
             dx={-5}
