@@ -1,6 +1,7 @@
 import React from "react";
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import AzureAPI from "../AzureAPI";
 
 function Introduction() {
   return (
@@ -14,6 +15,8 @@ function Introduction() {
         style={{ minHeight: '80vh' }}
         >
           <Grid item xs={12}>
+          <AzureAPI/>
+
             <Typography variant = 'h1' align = 'center'> Coro-No Virus </Typography>
             <Typography variant = 'h5' align = 'center'> Prepare yourself and help those affected by the 2019 Novel Coronavirus </Typography>
           </Grid>
