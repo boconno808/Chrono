@@ -29,7 +29,7 @@ const useStyles = makeStyles({
     backgroundColor: 'white',
   },
   dividers:{
-    paddingTop: "20%",
+    paddingTop: "10%",
     paddingBottom: "20%",
   },
   cardPadding:
