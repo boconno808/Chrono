@@ -7,6 +7,7 @@ import Masks from '../illustration/masks.png'
 import OnlyAsians from '../illustration/onlyAsians.png'
 import SameAsFlu from '../illustration/sameAsFlu.png'
 import OnlyOldPeople from '../illustration/onlyOldPeople.png'
+//import {FormattedMessage} from 'react-intl';
 
 
 const useStyles = makeStyles({

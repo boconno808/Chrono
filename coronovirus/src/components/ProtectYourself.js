@@ -7,6 +7,7 @@ import EyesNoseMouth from '../illustration/eyesNoseMouth.png'
 import WashHands from '../illustration/washHands.png'
 import SocialDistance from '../illustration/socialDistance.png'
 import CoughManners from '../illustration/coughManners.png'
+import {FormattedMessage} from 'react-intl';
 
 
 const useStyles = makeStyles({
@@ -41,8 +42,9 @@ export default function ProtectYourself() {
           <Paper>
             <img src={EyesNoseMouth} alt={"EyesNoseMouth"} className ={classes.imgSize}/>
             <Typography color="textSecondary" className ={classes.pos}>
-            Avoid touching eyes, nose and mouth, hands touch many surfaces and can pick up viruses.
-            Once contaminated, hands can transfer the virus to your eyes, nose or mouth.
+              <FormattedMessage id="app.protect.eyesNoseMouth"
+                    defaultMessage="Avoid touching eyes, nose and mouth, hands touch many surfaces and can pick up viruses.\n Once contaminated, hands can transfer the virus to your eyes, nose or mouth."
+                    description="protect eyesNoseMothh"/>
             </Typography>
           </Paper>
         </Grid>

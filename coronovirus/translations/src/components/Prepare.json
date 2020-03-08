@@ -1,0 +1,17 @@
+[
+  {
+    "id": "app.prepare.background.title",
+    "description": "title for background info",
+    "defaultMessage": "Background Information"
+  },
+  {
+    "id": "app.prepare.prepare.title",
+    "description": "title for prepare info",
+    "defaultMessage": "Prepare Yourself"
+  },
+  {
+    "id": "app.prepare.myths.title",
+    "description": "title for myths info",
+    "defaultMessage": "Myths"
+  }
+]

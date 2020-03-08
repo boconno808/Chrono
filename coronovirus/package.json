@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/cli": "^7.8.4",
     "@material-ui/core": "^4.9.5",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "^4.9.0",
@@ -10,8 +11,11 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "babel-plugin-react-intl": "^6.0.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-intl": "^4.1.1",
+    "react-intl-translations-manager": "^5.0.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "react-simple-maps": "^1.0.0-beta.0"
@@ -20,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "translations:extract": "NODE_ENV=production babel src/components/**.js",
+    "translations:manage": "node translationRunner.js"
   },
   "eslintConfig": {
     "extends": "react-app"

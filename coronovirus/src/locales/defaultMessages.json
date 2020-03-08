@@ -1,0 +1,47 @@
+[
+  {
+    "descriptors": [
+      {
+        "defaultMessage": "Coro-No Virus",
+        "description": "introduction title",
+        "id": "app.introduction.title"
+      },
+      {
+        "defaultMessage": "Prepare yourself and help those affected by the 2019 Novel Coronavirus",
+        "description": "introduction subtitle",
+        "id": "app.introduction.subtitle"
+      }
+    ],
+    "path": "src/components/Introduction.json"
+  },
+  {
+    "descriptors": [
+      {
+        "defaultMessage": "Background Information",
+        "description": "title for background info",
+        "id": "app.prepare.background.title"
+      },
+      {
+        "defaultMessage": "Prepare Yourself",
+        "description": "title for prepare info",
+        "id": "app.prepare.prepare.title"
+      },
+      {
+        "defaultMessage": "Myths",
+        "description": "title for myths info",
+        "id": "app.prepare.myths.title"
+      }
+    ],
+    "path": "src/components/Prepare.json"
+  },
+  {
+    "descriptors": [
+      {
+        "defaultMessage": "Avoid touching eyes, nose and mouth, hands touch many surfaces and can pick up viruses.\\n Once contaminated, hands can transfer the virus to your eyes, nose or mouth.",
+        "description": "protect eyesNoseMothh",
+        "id": "app.protect.eyesNoseMouth"
+      }
+    ],
+    "path": "src/components/ProtectYourself.json"
+  }
+]

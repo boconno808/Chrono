@@ -8,6 +8,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import OnMenuClick from './OnMenuClick'
+import {FormattedMessage} from 'react-intl';
 
 
 const useStyles = makeStyles({
@@ -58,14 +59,26 @@ export default function Prepare() {
             <CardContent className={classes.cardPadding}>
             <List component="nav" className={classes.list}>
               <ListItem button className={classes.dividers} onClick={() => setCurrentPage("Background Information")}>
-                <ListItemText primary="Background Information" className={classes.white}/>
+                <ListItemText
+                primary= <FormattedMessage id="app.prepare.background.title"
+                      defaultMessage="Background Information"
+                      description="title for background info"/>
+                className={classes.white}/>
               </ListItem>
               <Divider />
               <ListItem button divider className={classes.dividers} onClick={() => setCurrentPage("Protect Yourself")}>
-                <ListItemText primary="Protect Yourself" className={classes.white} />
+                <ListItemText
+                primary= <FormattedMessage id="app.prepare.prepare.title"
+                      defaultMessage="Prepare Yourself"
+                      description="title for prepare info"/>
+                className={classes.white}/>
               </ListItem>
               <ListItem button className={classes.dividers} onClick={() => setCurrentPage("Myths")}>
-                <ListItemText primary="Myths" className={classes.white} />
+                <ListItemText
+                primary= <FormattedMessage id="app.prepare.myths.title"
+                      defaultMessage="Myths"
+                      description="title for myths info"/>
+                className={classes.white}/>
               </ListItem>
             </List>
             </CardContent>

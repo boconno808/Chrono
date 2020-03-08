@@ -2,6 +2,8 @@ import Cdc from '../charity/cdc.png';
 import DirectRelief from '../charity/directRelief.png';
 import GlobalGiving from '../charity/globalGiving.png';
 import H2h from '../charity/h2h.png';
+//import {FormattedMessage} from 'react-intl';
+
 
 export const donateImgData = [
   {

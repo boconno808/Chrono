@@ -6,6 +6,7 @@ import Paper from '@material-ui/core/Paper';
 import SpreadContact from '../illustration/spreadContact.png'
 import SpreadMap from '../illustration/spreadMap.png'
 import Divider from '@material-ui/core/Divider';
+import {FormattedMessage} from 'react-intl';
 
 
 const useStyles = makeStyles({
@@ -33,14 +34,15 @@ export default function BackgroundInfo() {
         COVID-19
       </Typography>
       <Typography className={classes.pos} color="textSecondary">
-      The virus has been named “SARS-CoV-2” and the disease it causes has been named “coronavirus disease 2019”
-      (abbreviated “COVID-19”). The coronavirus was first detected in China and has now been detected in almost 90
-      locations internationally, including in the United States. On January 30, 2020, the International Health Regulations
-      Emergency Committee of the World Health Organization declared the outbreak a "Public health emergency of national concern"
+        <FormattedMessage id="app.backgroundInfo.covidExplaination"
+                  defaultMessage="The virus has been named SARS-CoV-2 and the disease it causes has been named coronavirus disease 2019 (abbreviated COVID-19). The coronavirus was first detected in China and has now been detected in almost 90 locations internationally, including in the United States. On January 30, 2020, the International Health Regulations Emergency Committee of the World Health Organization declared the outbreak a Public health emergency of national concern"
+                  description="Short summary on covid"/>
       </Typography>
       <Divider />
       <Typography variant = "h5" align="left" className={classes.divider}>
-        How it spreads
+        <FormattedMessage id="app.backgroundInfo.howitspreads"
+                  defaultMessage="How it spreads"
+                  description="How it spreads"/>
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={4}>
@@ -50,11 +52,9 @@ export default function BackgroundInfo() {
         </Grid>
         <Grid item xs={8}>
           <Typography color="textSecondary">
-          Between people who are in close contact with one another (within about 6 feet).
-          Through respiratory droplets produced when an infected person coughs or sneezes.
-          People are thought to be most contagious when they are most symptomatic (the sickest).
-          Some spread might be possible before people show symptoms; there have been reports of this occurring
-          with this new coronavirus, but this is not thought to be the main way the virus spreads.
+          <FormattedMessage id="app.backgroundInfo.spreadExplaination"
+                    defaultMessage="Between people who are in close contact with one another (within about 6 feet). Through respiratory droplets produced when an infected person coughs or sneezes. People are thought to be most contagious when they are most symptomatic (the sickest). Some spread might be possible before people show symptoms; there have been reports of this occurring with this new coronavirus, but this is not thought to be the main way the virus spreads."
+                    description="spread explaination"/>
           </Typography>
         </Grid>
         <Grid item xs={8}>
