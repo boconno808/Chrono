@@ -7,7 +7,7 @@ function LocationMarker (props) {
 
     return (
             <Marker coordinates={[props.long, props.lat]}>
-                <circle r={10} fill="#F53" onClick={zoomIn}/>
+                <circle r={2} fill="#F53" onClick={zoomIn}/>
             </Marker>    
     )
 }

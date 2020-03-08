@@ -10,8 +10,8 @@ const Map = () => {
 
     const coordinates = [
       // US Locations
-      {long: -118.384434, lat: 34.040348, name: "UCLA Medical"},
-      {long: -118.445353, lat: 34.069072, name: "UCLA Health Internal Medicine Physicians"},
+      // {long: -118.384434, lat: 34.040348, name: "UCLA Medical"},
+      // {long: -118.445353, lat: 34.069072, name: "UCLA Health Internal Medicine Physicians"},
       {long: -118.291547, lat: 34.103174, name: "Kaiser Permanente Los Angeles Medical Center", address: "4867 Sunset Blvd, Los Angeles, CA 90027"},
       
       // Asia Locations
@@ -23,9 +23,11 @@ const Map = () => {
       {long: -0.108711, lat: 51.501537, name: "Public Health England", address: "Wellington House, 133-155 Waterloo Rd, Bishop's, London SE1 8UG, United Kingdom"},
     
       // Australia Location
-      {long: 144.956177, lat: -37.798862, name: "Victorian Infectious Diseases Services", address: "9/300 Grattan St, Parkville VIC 3050, Australia"}
+      {long: 144.956177, lat: -37.798862, name: "Victorian Infectious Diseases Services", address: "9/300 Grattan St, Parkville VIC 3050, Australia"},
+    
+      //{long:-98, lat:33}
     ];
-   
+
     function zoomIn () {
         setZoom(zoom * 2);
     }
@@ -35,18 +37,23 @@ const Map = () => {
       <ZoomableGroup zoom={zoom} zoomIn={zoomIn}>
         <Geographies geography={geoUrl}>
             {({ geographies }) =>
-            geographies.map(geo => (
-                <Geography
-                key={geo.rsmKey}
-                geography={geo}
-                fill="#DDD"
-                stroke="#FFF"
-                />
-            ))
-            }
+            geographies.map(geo => 
+              ( <Geography key={geo.rsmKey} geography={geo} fill="#DDD" stroke="#FFF"/>))}
         </Geographies>
-            {coordinates.map((coordinates) =>
+            { coordinates.map((coordinates) =>
                 <LocationMarker long={coordinates.long} lat={coordinates.lat} zoomIn={zoomIn}/>
+            )}
+            { coordinates.map((coordinates) =>
+              <Annotation
+                  subject={[coordinates.long, coordinates.lat]}
+                  dx={-5}
+                  dy={-10}
+                  connectorProps={{ stroke: "#FF5533", strokeWidth: 1, strokeLinecap: "round" }}>
+            
+                  <text x="-8" textAnchor="end" style ={{fontSize:5}} alignmentBaseline="middle" fill="#F53">
+                    {coordinates.name + "\n: " + coordinates.address}
+                  </text>
+              </Annotation>
             )}
 
         {/* <ZoomableGroup center={[position.lat, position.long] }> */}
@@ -59,19 +66,7 @@ const Map = () => {
             </LocationMarker> */}
          {/* </ZoomableGroup> */}
 
-        <Annotation
-            subject={[-98, 33]}
-            dx={-5}
-            dy={-10}
-            connectorProps={{
-            stroke: "#FF5533",
-            strokeWidth: 1,
-            strokeLinecap: "round"
-            }}>
-            <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="#F53">
-            {"Rachel's Home"}
-            </text>
-        </Annotation>
+        
       </ZoomableGroup>
     </ComposableMap>
   );
