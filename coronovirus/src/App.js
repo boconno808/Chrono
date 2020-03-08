@@ -42,7 +42,7 @@ function App() {
               <BottomNavigationAction
                   component={Link}
                   to="/coronovirus/test"
-                  label='Test'
+                  label='Test Location'
                   value='Test'
               />
               <BottomNavigationAction
