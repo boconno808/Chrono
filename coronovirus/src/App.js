@@ -8,7 +8,6 @@ import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
   root: {
