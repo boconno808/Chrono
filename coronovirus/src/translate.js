@@ -8,7 +8,7 @@ const fs = require('fs');
 const localesFolder = "./locales/";
 
 // Make sure you copy the subscription key from the translation resource on Azure
-const subscriptionKey = "c0858c998d0040e3b431ae02ecff3db5";
+const subscriptionKey = process.env.TRANSLATOR_ENV_SUBSCRIPTION_KEY;
 
 /*
  * Iterates over every locale supported
